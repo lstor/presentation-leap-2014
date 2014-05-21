@@ -1,0 +1,174 @@
+@import "reset";
+
+$accent-color: #c00;
+$fg-color: #1a1b1f;
+$bg-color: white;
+
+$light-font: 200;
+$heavy-font: 600;
+
+body {
+  color: $fg-color;
+  background-color: $bg-color;
+}
+
+h1,h2,h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+h1 {
+  color: $fg-color;
+  font-size: 2.0em;
+}
+
+h2 {
+  color: $fg-color;
+  border-bottom: 1px solid $accent-color;
+  font-size: 150%;
+}
+
+h3 {
+  color: $fg-color;
+}
+
+pre {
+  border-color: $fg-color;
+}
+
+hr {
+  color: $accent-color;
+  border-color: $accent-color;
+}
+
+em {
+  color: $accent-color;
+  font-style: normal;
+}
+
+i {
+  color: $accent-color;
+  font-style: italic;
+}
+
+code {
+  color: $fg-color;
+}
+
+ul {
+  list-style-type: square;
+}
+
+blockquote {
+  font-size:2em;
+  font-style:italic;
+  padding:1em 2em;
+  color: black;
+  border-left:5px solid $fg-color;
+
+  p {
+    margin:0;
+  }
+
+  cite {
+    font-size:.5em;
+    font-style:normal;
+    font-weight:bold;
+    color: $fg-color;
+  }
+}
+
+::-moz-selection{ background: $accent-color; color: white; }
+::selection { background: $accent-color; color: white; }
+
+a {
+  &, &:hover, &:focus, &:active, &:visited {
+    color: $accent-color;
+    text-decoration:none;
+  }
+
+  &:hover, &:focus {
+    text-decoration:underline;
+  }
+}
+
+.deck-container {
+  font-family: 'Corbel';
+  font-size:1.75em;
+  color: $fg-color;
+
+  //background: $bg-color url('resources/leap.png') no-repeat fixed left center;
+  border: 0px;
+  height: 100%;
+
+  > .slide {
+    padding:0 48px;
+  }
+}
+
+.slide {
+
+  .deck-before, .deck-previous {
+
+    &:not(.deck-child-current) {
+      .deck-before, .deck-previous {
+      }
+    }
+  }
+
+  .deck-child-current {
+  }
+}
+
+.deck-prev-link, .deck-next-link {
+  background: $fg-color;
+  font-family:serif;
+
+  &, &:hover, &:focus, &:active, &:visited {
+    color: white;
+  }
+
+  &:hover, &:focus {
+    background: $accent-color;
+    text-decoration:none;
+  }
+}
+
+.deck-status {
+  font-size:0.6666em;
+}
+
+.deck-menu {
+  .slide {
+    background: $bg-color;
+  }
+
+  .deck-current, .no-touch & .slide:hover {
+    background: $bg-color;
+  }
+}
+
+.accent-color {
+    color: $accent-color;
+}
+
+.no-underline {
+  border-bottom: 0px;
+}
+
+.faded {
+  opacity: 0.4;
+}
+
+.squished {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('resources/raleway-thin-webfont.woff') format('woff'),
+       url('resources/raleway-thin-webfont.ttf') format('truetype');
+}
+
+// vim:sts=2:sw=2:

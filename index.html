@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+        <title>LEAP 2014</title>
+        <meta name="author" content="Lars Storjord">
+        <meta name="date" content="2014-05-23">
+        <meta name="company" content="Mesan">
+
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <link rel="stylesheet" href="deck.js/themes/transition/fade.css">
+
+        <!-- override some style here if needed (or use an external file) -->
+        <style type="text/css">
+            /* simple example for full screen images (could integrate in a theme or future extension) */
+            .deck-container.fsimg .slide {padding:0;}
+            /*.deck-container.fsimg {background: black;}*/
+            .fsimg h2 {display: none;}
+            .fsimg .deck-status {display: none;}
+            .fsimg img {min-width:800px; min-height:600px; position: absolute; left:0; top:0; margin:0; }
+            .fsimg .attribution-wrap {width:800px; height:600px;}
+            .smaller-font {font-size: 80%;}
+        </style>
+        <script src="deck.js/extensions/includedeck/load.js"></script>
+        <script>
+            includedeck("profile-3 theme:leap", {INITDELAY: 500})
+
+            // Advanced: the "{}" can be filled with optional arguments such as
+            //// PREFIX: "deck.js",
+            //// INITDELAY: 500,
+            //// BEFORELOAD: function() {alert('will load')},
+            //// BEFOREINIT: function() {alert('loaded')},
+            //// AFTERINIT: function() {alert('inited')},
+            //// GENERIC: function(whe, wha) {if (whe == "AFTER" && wha == "svg") alert("AFTER SVG")},
+            //// fitMarginX:100, fitMarginY:100, // to tune margins
+            //// fitMode: "stretched", // to strech (variable aspect ratio)
+        </script>
+    </head>
+
+<body>
+<div class="deck-container">
+    <div class="deck-loading-splash">
+        <span class="vcenter" style="font-size: 30px; font-family: Corbel;">
+            Loading presentation &hellip;
+        </span>
+    </div>
+
+<div class="slide title-slide" data-container-class="no-status">
+  <div class="vcenter">
+    <img src="images/leap.png"></img>
+    <hr>
+    <h3><span class="var-author"></span></h3>
+    <br>
+  </div>
+</div>
+
+
+<section class="smart">
+=<em>L</em>ead <em>E</em>nterprise <em>A</em>rchitect <em>P</em>rogram=
+
+<p class="slide">Tre dager i Seattle</p>
+<p class="slide">Fem &laquo;Master classes&raquo;</p>
+</section>
+
+<div class="slide">
+<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172133.14576322187!2d-122.33584225000001!3d47.61484804999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C+Washington!5e0!3m2!1sno!2sno!4v1400696604268" width="800" height="600" frameborder="0" style="border:0"></iframe>
+</div>
+
+<div class="slide">
+  <img src="images/seattle_map.png"></img>
+</div>
+
+<section class="smart">
+==Høydepunkter fra programmet==
+
+==<i>Seattle</i>==
+</section>
+
+<!--THE FUTURE OF Csharp------------------>
+<section class="smart">
+==The Future of <em>C&#9839;</em>==
+</section>
+<!------------------------------------>
+
+<!--MICROSOFT AZURE ------------------>
+<section class="smart">
+==Microsoft <em>Azure</em>==
+=Microsoft <em>Azure</em>=
+</section>
+<!------------------------------------>
+
+
+<!--THE WAY WE EXPERIENCE INSIGHTS  -->
+<section class="smart">
+==The Way We Experience Insights==[smaller-font]
+=The Way We Experience Insights=
+</section>
+<!------------------------------------>
+
+<!--TOUCHDEVELOP---------------------->
+<section class="smart">
+==<em>Touch</em>Develop==
+</section>
+<div class="slide">
+<iframe width="853" height="480" src="//www.youtube.com/embed/g7EuUc4zJYE?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<section class="smart">
+=Hvorfor TouchDevelop?=
+
+* Tilgjengelig
+* Enkelt
+* Barn og andre &laquo;muggles&raquo;
+</section>
+<!------------------------------------>
+
+
+
+
+<section class="smart">
+==<i>Lysaker</i>==
+</section>
+
+<!--DOMAIN DRIVEN DESIGN-------------->
+<div class="slide">
+  <div class="vcenter">
+    <hgroup>
+    <h2 class="no-underline">Master Class #1</h2>
+    <h2 class="no-underline"><i>Domain Driven Design</i></h2>
+    </hgroup>
+  </div>
+</div>
+
+<section class="smart">
+=Domain Driven Design=
+* Les boka (eller i det minste pdf-en)
+* Event-sourcing
+* <em>No</em>SQL
+* Kategoriser sub-domener
+* Anti-corruption layers
+* <em>C</em>ommand-<em>Q</em>uery <em>R</em>esponsibility <em>S</em>egregation
+</section>
+<!------------------------------------>
+
+<!--SECURITY-------------------------->
+<div class="slide">
+  <div class="vcenter">
+    <hgroup>
+    <h2 class="no-underline">Master Class #2</h2>
+    <h2 class="no-underline"><i>Security</i></h2>
+    </hgroup>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="vcenter">
+    <p>Nothing to learn here &hellip;</p>
+  </div>
+</div>
+<!------------------------------------>
+
+<!--CLOUD   -------------------------->
+<div class="slide">
+  <div class="vcenter">
+    <hgroup>
+    <h2 class="no-underline">Master Class #3</h2>
+    <h2 class="no-underline"><i>Cloud</i></h2>
+    </hgroup>
+  </div>
+</div>
+
+<section class="smart">
+=Cloud=
+* <i>Netflix</i>: The Chaos Monkey and the Simian Army
+* MTTR <em>&gt;</em> MTBF
+* Microservices
+* <em>No</em>SQL
+* A/B testing <em>&ndash;</em> Canari testing
+* Immutability
+* Amazon <em>&ndash;</em> shipper før betaling
+</section>
+<!------------------------------------>
+
+<!--TESTING -------------------------->
+<div class="slide">
+  <div class="vcenter">
+    <hgroup>
+    <h2 class="no-underline">Master Class #4</h2>
+    <h2 class="no-underline"><i>Testing</i></h2>
+    </hgroup>
+  </div>
+</div>
+
+<section class="smart">
+=Testing=
+* Ta ISTQB Foundation
+* Foiler kommer &hellip;
+</section>
+<!------------------------------------>
+
+<!--MOBILITY-------------------------->
+<div class="slide">
+  <div class="vcenter">
+    <hgroup>
+    <h2 class="no-underline">Master Class #5</h2>
+    <h2 class="no-underline"><i>Mobility</i></h2>
+    </hgroup>
+  </div>
+</div>
+
+<section class="smart">
+=Mobility=
+* Identity
+* <em>B</em>ring <em>Y</em>our <em>O</em>wn <em>D</em>evice
+* WinJS <em>&ndash;</em> Xamarin
+* PhoneGap <em>&#x21d2;</em> Cordova
+* Netflix <span class="faded">(igjen &hellip;)</span>
+* <em>No</em>SQL <span class="faded">(igjen &hellip;)</span>
+* Microservices <span class="faded">(igjen &hellip;)</span>
+</section>
+<!------------------------------------>
+
+<!------------------------------------>
+<section class="smart">
+==Alt i alt &hellip;==
+=Nøkkelpunkter=
+
+* Skytjenester
+* Identity
+* Samle informasjon
+* A/B testing og DevOps
+* NoSQL
+* Microservices
+* &laquo;Internet of Things&raquo;
+</section>
+<section class="smart">
+==Takk<em>!</em>==
+</section>
+
+<!---------------------------------------------------------------------------->
+<!-- end of the presentation -->
+
+
+
+<!-- progress bar -->
+<div data-progress-size=":spe.bottom(0, 0) ; left: slide.left+'px' ; height:
+    designRatio+'px'" data-progress="width: p * slide.width"
+style="background: #c00; position: absolute;"> </div>
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+</div> <!-- end of deck container -->
+
+<script>
+$(document).bind('deck.change', function(event, from, to) {
+});
+</script>
+</body>
+</html>
+
+<!-- vim:sts=2:sw=2:
+-->
